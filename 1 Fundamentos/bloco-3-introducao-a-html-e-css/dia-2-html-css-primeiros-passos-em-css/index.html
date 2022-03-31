@@ -10,15 +10,39 @@
             font-size: 65px;
             color: orange;
         }
+    /* Conteúdo da Lista não ordenada */
+        li {
+            width: fit-content; /* ajusta a caixa do conteúdo, do tamanho máximo do próprio conteúdo e não passando além disso. Mais detalhes em https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content  */
+            font-size: 18pt;
+        }
+
+        li#brown{
+            background-color:brown
+        }
+
+        li#red{
+            background-color: red;
+        }
+
+        li#yellow{
+            background-color: yellow;
+        }
+
+        /*Paragrafo e Lista não ordenada*/
+        .styleAlfa{
+            background-color: rgba(3, 3, 3, 0.548);
+            width: fit-content;
+            font-size: 25px;
+        }
     </style>
 </head>
 <body>
     <h1>Exercício 3.2</h1>
-    <p>Qual é a sua cor favorita?</p>
-    <ul>
-        <li>Amarelo</li>
-        <li>Vermelho</li>
-        <li>Marrom</li>
+    <p class="styleAlfa">Qual é a sua cor favorita?</p>
+    <ul class="styleAlfa">
+        <li id="yellow">Amarelo</li>
+        <li id="red">Vermelho</li>
+        <li id="brown">Marrom</li>
     </ul>
 </body>
 </html>
