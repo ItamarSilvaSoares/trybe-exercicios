@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
     <style>
+
+        body{
+            font-size: 16px;
+        }
+
         h1{
+            font-family: sans-serif;
             font-size: 65px;
             color: orange;
         }
+
     /* Conteúdo da Lista não ordenada */
         li {
-            width: fit-content; /* ajusta a caixa do conteúdo, do tamanho máximo do próprio conteúdo e não passando além disso. Mais detalhes em https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content  */
-            font-size: 18pt;
+            text-align: left;
+            line-height: 3em;
         }
 
         li#brown{
@@ -27,12 +34,21 @@
         li#yellow{
             background-color: yellow;
         }
+        
+        /*Paragrafo*/
+        p{
+            font-weight: 600;
+            font-size: 3em;
+            text-decoration: overline underline;
+            text-decoration-color: greenyellow;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 3px;
+        }
 
         /*Paragrafo e Lista não ordenada*/
         .styleAlfa{
             background-color: rgba(3, 3, 3, 0.548);
             width: fit-content;
-            font-size: 25px;
         }
     </style>
 </head>
