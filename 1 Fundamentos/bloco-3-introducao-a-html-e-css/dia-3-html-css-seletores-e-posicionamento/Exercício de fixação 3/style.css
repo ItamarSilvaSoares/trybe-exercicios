@@ -1,0 +1,19 @@
+h1, p {
+  text-align: center;
+}
+
+li:hover {
+  background-color: yellowgreen;
+}
+
+li:active {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
