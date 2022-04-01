@@ -14,16 +14,16 @@
 
 .baloon {
   position: absolute;
-  width: 300px;
+  width: 308px;
   left: 250px;
   z-index: 3;
 }
 
 .speach {
-
-  font-size: 22px;
+  width: 55%;
+  font-size: 25px;
   position: relative;
-  left: 260px;
+  left: 247px;
   top: 120px;
   z-index: 4;
 }
