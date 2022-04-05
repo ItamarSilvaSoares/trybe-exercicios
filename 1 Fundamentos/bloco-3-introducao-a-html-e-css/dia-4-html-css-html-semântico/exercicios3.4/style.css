@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    background-color: #60606086;
+    background-color: #3b3b3b86;
     color: #000000;
     font-family: Arial, Helvetica, sans-serif sans-serif;
     font-size: 20px;
@@ -11,7 +11,7 @@ body{
     width: 980px;
     margin: auto;
     box-shadow: 0px 0px 15px gray;
-    background-color: #E7E6DC;
+    background-color: #a1a197;
 }
 
 .cabecalho{
@@ -48,14 +48,35 @@ ul.menu a:active{
     color: yellow;
 }
 
-.cabecalh h1{
-    font-size: 2.2em;
+.cabecalho h1{
+    font-size: 2em;
 }
 h2 {
     border: 1px solid red;
     font-size: 17pt;
-    background-color: #cfcdba;
+    background-color: #3b3b3b86;
     margin-left: 10px;
+}
+
+p {
+    text-align: justify;
+    margin-left:10px;
+    margin-right: 10px;
+    text-indent: 50px;
+}
+
+p:hover{
+    background-color: #afacac;
+}
+
+.img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 10px black;
+}
+.reduzir{
+ width: 30%;
 }
 
 /* links */
@@ -63,3 +84,6 @@ a:visited{
     color: #0F1010;
 }
 
+::selection{
+    background-color:#35BF5C;
+}
