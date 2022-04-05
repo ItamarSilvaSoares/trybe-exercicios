@@ -1,89 +1,116 @@
 @charset "UTF-8";
 
-body{
-    background-color: #3b3b3b86;
-    color: #000000;
-    font-family: Arial, Helvetica, sans-serif sans-serif;
-    font-size: 20px;
+body {
+  background-color: #3b3b3b86;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif sans-serif;
+  font-size: 20px;
+  box-sizing: border-box;
 }
 
-#interface{
-    width: 980px;
-    margin: auto;
-    box-shadow: 0px 0px 15px gray;
-    background-color: #a1a197;
+#interface {
+  width: 1200px;
+  margin: auto;
+  box-shadow: 0px 0px 15px gray;
+  background-color: #a1a197;
+  position: relative;
 }
-
-.cabecalho{
-    border-bottom: 1px solid #606060;
-    padding: 15px;
-    text-align: center;
-    background-color: #DCDDE7;
+/* cabeçalho */
+.cabecalho {
+  border-bottom: 1px solid #606060;
+  padding: 15px;
+  text-align: center;
+  background-color: #dcdde7;
 }
 
 .navegacao {
-    margin-top: 0px;
-    border-bottom: 1px solid #606060;
-    
+  margin-top: 0px;
+  border-bottom: 1px solid #606060;
 }
 
-.menu li{
-    position: relative;
-    padding-right: 10px;
-    display: inline-block;
-    
+.menu li {
+  position: relative;
+  padding-right: 10px;
+  display: inline-block;
 }
 ul.menu a {
-    padding: 2px;
-    text-decoration: none;
+  padding: 2px;
+  text-decoration: none;
 }
 
-ul.menu a:hover{
-    text-decoration: underline;
-    color: white;
-    background-color: #0f101080;
+ul.menu a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: #0f101080;
 }
 
-ul.menu a:active{
-    color: yellow;
+ul.menu a:active {
+  color: yellow;
 }
 
-.cabecalho h1{
-    font-size: 2em;
+.cabecalho h1 {
+  font-size: 2em;
 }
-h2 {
-    border: 1px solid red;
-    font-size: 17pt;
-    background-color: #3b3b3b86;
-    margin-left: 10px;
+/* heads e paragrafos*/
+h2, h3 {
+  font-size: 17pt;
+  background-color: #3b3b3b86;
+  margin-left: 10px;
+  color: whitesmoke;
+  padding-left: 10px;
 }
 
 p {
-    text-align: justify;
-    margin-left:10px;
-    margin-right: 10px;
-    text-indent: 50px;
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-indent: 50px;
 }
 
-p:hover{
-    background-color: #afacac;
+p:hover {
+  background-color: #afacac;
+}
+/* imagens */
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px black;
+}
+.reduzir {
+  width: 30%;
 }
 
-.img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 0px 10px black;
+/* aside */
+/* Para colocar um video incoporado do youtube em aside, REMOVA o width do iframe do copiado, senão terá muíta dor de cabeça, para funiconar o side normalmente */
+.main-content {
+  width: 56%;
+  display: inline-block;
+  border-right: 1px solid #606060;
 }
-.reduzir{
- width: 30%;
+.side-bar{
+    background-color: #dcdde77e;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    padding-bottom: 25px;
 }
-
+.box {
+    display: inline-block;
+}
+#video{
+    width: 500px;
+}
 /* links */
-a:visited{
-    color: #0F1010;
+a:visited {
+  color: #0f1010;
 }
 
-::selection{
-    background-color:#35BF5C;
+#rodape {
+  clear: both;
+}
+
+::selection {
+  background-color: #35bf5c;
 }
