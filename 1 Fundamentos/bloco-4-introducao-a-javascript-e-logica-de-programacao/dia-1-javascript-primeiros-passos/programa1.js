@@ -1,7 +1,7 @@
-let number1 = 1,
+const number1 = 1,
     number2 = 2
 
-adicao(a, b)
+adicao(number1, number2)
 
 function adicao(a, b) {
     console.log(a + b);
