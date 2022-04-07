@@ -1,4 +1,4 @@
-const salarioBruto = 1500.10;
+const salarioBruto = 5500.10;
 let salaryDiscountInss = null;
 let auxImpress = ``;
 let impress = ``;
@@ -73,6 +73,6 @@ function calculaIR(salario) {
         parcelaReduzir = 869.36;
     }
     valorIr = salario * irAliquota - parcelaReduzir;
-    salarioDescontado = salario - valorIr;
+    salarioDescontado = (salario - valorIr).toFixed(2);
     console.log(`Salário com o desconto do IR: R$ ${salarioDescontado}`)
 }
