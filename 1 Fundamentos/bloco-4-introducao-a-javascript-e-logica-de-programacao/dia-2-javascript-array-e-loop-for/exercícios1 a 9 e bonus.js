@@ -111,6 +111,7 @@ let numbers2 = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
      return [...arr, ...direira, ...esquerda]
  } // funciona mas está quebrado pois ele apaga o conteúdo do array inicial
 
+ // referencia para um novo merge sort https://visualgo.net/en/sorting?slide=11-2
 // funcion merge sort -> https://stackabuse.com/merge-sort-in-javascript/
 
 console.log("array growing: " + numbers3 );
