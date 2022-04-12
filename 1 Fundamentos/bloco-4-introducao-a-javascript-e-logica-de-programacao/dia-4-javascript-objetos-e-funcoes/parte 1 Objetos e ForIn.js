@@ -50,11 +50,6 @@ let leitor = {
       autor: "Daniela Kopsch",
       editora: "Tordesilhas",
     },
-    {
-      titulo: "Harry Potter e o Prisioneiro de Azkaban",
-      autor: "JK Rowling",
-      editora: "Rocco",
-    },
   ],
 };
 
@@ -65,6 +60,11 @@ console.log(
 );
 
 //   7 - Adicione um novo livro favorito na chave livrosFavoritos , que é um array . Atribua a esta chave um objeto contendo as seguintes informações:
+leitor.livrosFavoritos.push({
+  titulo: "Harry Potter e o Prisioneiro de Azkaban",
+  autor: "JK Rowling",
+  editora: "Rocco",
+});
 
 // 8 - Acesse as chaves nome e livrosFavoritos e faça um console.log no seguinte formato: "Julia tem 2 livros favoritos".
 
