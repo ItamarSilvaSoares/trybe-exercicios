@@ -79,7 +79,7 @@ function numberRepeated(numbers) {
   let repetido = 0;
   for (let index = 0; index < numbers.length; index++) {
     let aux = 0;
-    for (let index2 = 1; index2 < numbers.length - 1; index2++) {
+    for (let index2 = 0; index2 < numbers.length - 1; index2++) {
       if (numbers[index] === numbers[index2]) {
         aux += 1;
       }
