@@ -42,20 +42,41 @@
       </section>
     </main>
     <script>
-        let a = null;
+        
         function mudaP() {
         document.getElementsByTagName("p")[1].innerHTML="Me vejo grande"
         }
-        mudaP();
+        
         function mudaCorLado() {
         document.getElementsByClassName("main-content")[0].style.backgroundColor = 'rgb(' + [76,164,109].join(',') + ')';
         }
         function mudaCorCentro() {
             document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
         }
-        mudaCorCentro()
+        function corrigeTexto() {
+         let errado = document.getElementsByTagName('h1')[0].innerHTML
+         document.getElementsByTagName('h1')[0].innerHTML = errado.replace('JavaEscripito', 'JavaScript')
+        }
+        function upCase() {
+          let up =  document.getElementsByTagName('p')
+          for (const iterator of up) {
+              iterator.style.textTransform = 'uppercase'
+          }
+        }
+        function log() {
+          let up =  document.getElementsByTagName('p')
+            for (const iterator of up) {
+                console.log(iterator.innerHTML );
+            }
+        }
+        mudaP();
+        corrigeTexto();
+        mudaCorCentro();
         mudaCorLado();
-        console.log(a);
+        upCase();
+        log();
+        
+        
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
