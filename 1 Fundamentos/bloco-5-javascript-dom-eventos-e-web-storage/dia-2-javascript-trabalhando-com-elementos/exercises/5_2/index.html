@@ -1,96 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Exercício 5.2</title>
-    <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
 
-      .title {
-        text-align: center;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Exercício 5.2</title>
+  <style>
+    section {
+      border-color: black;
+      border-style: solid;
+    }
 
-      .main-content {
-        background-color: yellow;
-      }
+    .title {
+      text-align: center;
+    }
 
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    .main-content {
+      background-color: yellow;
+    }
 
-      .main-content .center-content p {
-        font-style: italic;
-      }
+    .main-content .center-content {
+      background-color: red;
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
+    .main-content .center-content p {
+      font-style: italic;
+    }
 
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
+    .main-content .left-content {
+      background-color: green;
+      width: 60%;
+      margin-left: 0;
+      margin-right: auto;
+    }
 
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
+    .main-content .left-content .small-image {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+    }
 
-      .main-content .description {
-        text-align: center;
+    .main-content .right-content {
+      background-color: blue;
+      width: 60%;
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .main-content .description {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    function adicionaImagens(classe, where, src) {
+      let image = document.createElement('img');
+      if (classe.length !== 0) {
+        image.className = classe;
       }
-    </style>
-  </head>
-  <body>
-    <script>
-      function adicionaTags(tag, classe, where, text) {
-          let item = document.createElement(tag);
-          if (text.length !==0){
-              item.innerText = text;
-          }
-          if(classe.length !== 0){
-            item.className = classe;
-          }
-          where.appendChild(item);
-          console.log(`Elemento criado e adicionado com sucesso`); 
+      if (src.length !== 0) {
+        image.src = src;
+        where.appendChild(image);
+        console.log(`Imagem criada e adicionado com sucesso`);
+      } else {
+        console.log(`Falha em criar a tag img, src vazio`);
       }
+    }
+    function adicionaTags(tag, classe, where, text) {
+      let item = document.createElement(tag);
+      if (text.length !== 0) {
+        item.innerText = text;
+      }
+      if (classe.length !== 0) {
+        item.className = classe;
+      }
+      where.appendChild(item);
+      console.log(`Elemento criado e adicionado com sucesso`);
+    }
 
     // 1 -Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body ;
 
     let body = document.getElementsByTagName('body')[0];
-      adicionaTags('h1','', body,'Exercício 5.2 - JavaScript DOM')
+    adicionaTags('h1', '', body, 'Exercício 5.2 - JavaScript DOM')
 
-    //   2Adicione a tag main com a classe main-content como filho da tag body ; 
+    //   2 - Adicione a tag main com a classe main-content como filho da tag body ; 
 
-      adicionaTags('main','main-content',body,'')
+    adicionaTags('main', 'main-content', body, '')
 
     //   3 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2; 
 
-      let main = document.querySelector('.main-content')
-      adicionaTags('section','center-content',main,'')
+    let main = document.querySelector('.main-content')
+    adicionaTags('section', 'center-content', main, '')
 
     //   4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
-      let section = document.querySelector('.center-content')
-      adicionaTags('p','',section,'A function ficou TOP')
+    let section = document.querySelector('.center-content')
+    adicionaTags('p', '', section, 'A function ficou TOP')
+
     //   5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2; 
 
-    
-      console.log(main);
-    </script>
-  </body>
+    adicionaTags('section', 'left-content', main, '')
+
+    // 6 - Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+
+    adicionaTags('section', 'right-content', main, '')
+
+    // 7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5; 
+
+    let penultimaSection = document.querySelector('.main-content').lastElementChild.previousElementSibling
+
+    adicionaImagens('small-image', penultimaSection, 'https://picsum.photos/200')
+
+    // 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+
+    let ultimaSection = document.querySelector('.main-content').lastElementChild
+
+    let itemsLista = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+
+    adicionaTags('ul', '', ultimaSection, '')
+    let ul = document.querySelector('.right-content').firstChild
+    for (const item of itemsLista) {
+      adicionaTags('li', '', ul, item)
+    }
+
+    // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2
+
+    for (let index = 0; index < 3; index++) {
+      adicionaTags('h3', '', main, '')
+
+    }
+
+    console.log(ul);
+  </script>
+</body>
+
 </html>
