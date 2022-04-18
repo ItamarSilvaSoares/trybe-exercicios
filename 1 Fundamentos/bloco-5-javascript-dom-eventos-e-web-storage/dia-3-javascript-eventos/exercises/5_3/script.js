@@ -46,10 +46,17 @@ function criaDias() {
       li.className += " friday";
     }
     li.innerText = dia;
+    li.addEventListener("mouseover", zoom);
+    li.addEventListener("mouseout", dZoom);
     ulDay.appendChild(li);
   }
 }
-
+function dZoom(event) {
+  event.target.style.transform = "scale(1)";
+}
+function zoom(event) {
+  event.target.style.transform = "scale(1.7)";
+}
 function botaoFeriado(string) {
   let botaoFeriado = document.createElement("button");
   botaoFeriado.setAttribute("id", "btn-holiday");
