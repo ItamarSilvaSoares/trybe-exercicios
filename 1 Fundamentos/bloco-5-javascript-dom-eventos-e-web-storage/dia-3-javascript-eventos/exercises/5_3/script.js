@@ -23,6 +23,11 @@ createDaysOfTheWeek();
 
 // Escreva seu código abaixo.
 
+window.onload = function () {
+  criaDias();
+  botaoFeriado("Feriados");
+  botaoEvento("Sexta-feira");
+};
 function criaDias() {
   const ulDay = document.querySelector("#days");
   const dezDaysList = [
@@ -44,12 +49,43 @@ function criaDias() {
     ulDay.appendChild(li);
   }
 }
-criaDias();
 
 function botaoFeriado(string) {
   let botaoFeriado = document.createElement("button");
   botaoFeriado.setAttribute("id", "btn-holiday");
   botaoFeriado.innerText = string;
+  botaoFeriado.addEventListener("click", mudaCor);
   document.querySelector(".buttons-container").appendChild(botaoFeriado);
 }
-botaoFeriado("Feriados");
+function mudaCor() {
+  let holidays = document.querySelectorAll(".holiday");
+  for (const holiday of holidays) {
+    if (holiday.style.backgroundColor !== "lightgray") {
+      holiday.style.backgroundColor = "lightgray";
+    } else {
+      holiday.style.backgroundColor = "rgb(238, 238, 238)";
+    }
+  }
+}
+
+function botaoEvento(string) {
+  let button = document.createElement("button");
+  button.addEventListener("click", sexta);
+  button.innerText = string;
+  document.querySelector(".buttons-container").appendChild(button);
+}
+
+const sextasfeiras = [];
+function sexta() {
+  let sextas = document.querySelectorAll(".friday");
+  for (let index = 0; index < sextas.length; index += 1) {
+    if (sextas[index].innerText !== "Sexta-feira") {
+      if (!sextasfeiras.includes(sextas[index].innerText)) {
+        sextasfeiras.push(sextas[index].innerText);
+      }
+      sextas[index].innerText = "Sexta-feira";
+    } else {
+      sextas[index].innerText = sextasfeiras[index];
+    }
+  }
+}
