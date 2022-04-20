@@ -1,6 +1,7 @@
 const config = document.querySelector(".dropbtn");
 config.addEventListener("mouseover", menu);
 const ul = document.querySelector(".conf");
+document.querySelector(".aside").addEventListener("mouseleave", fechaMenu);
 
 window.onload = function () {
   //criar as caixas com as cores de fundos
@@ -17,7 +18,31 @@ window.onload = function () {
   crieteOpt();
   ranger();
   criarInput();
+  criaOpt();
 };
+// estilo fonts
+function criaOpt(params) {
+  const nomeFonts = ["Montserrat", "Arial", "Ubuntu"];
+  const p = document.createElement("label");
+  ul.appendChild(p);
+  for (index = 0; index < nomeFonts.length; index += 1) {
+    const li = document.createElement("li");
+    li.innerText = nomeFonts[index];
+    li.style.fontFamily = nomeFonts[index];
+    li.style.display = "inline-block";
+    li.style.padding = "10px";
+    li.style.fontSize = "1.5em";
+    li.addEventListener("click", mudafont);
+    ul.appendChild(li);
+  }
+}
+// muda font
+function mudafont(event) {
+  document.querySelector(".cont-artigos").style.fontFamily =
+    event.target.style.fontFamily;
+  console.log(event.target.value);
+}
+
 // espaçamento das linhas
 function criarInput() {
   const li = document.createElement("li");
@@ -36,6 +61,8 @@ function criarInput() {
   li.appendChild(range);
   ul.appendChild(li);
 }
+
+// muda espaçamento
 function space(event) {
   document.querySelector(".cont-artigos").style.lineHeight = event.target.value;
 }
@@ -104,4 +131,8 @@ function colorBackground(event) {
 // mostrar o menu
 function menu() {
   document.querySelector(".aside").style.visibility = "visible";
+}
+
+function fechaMenu() {
+  document.querySelector(".aside").style.visibility = "hidden";
 }
