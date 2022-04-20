@@ -16,7 +16,30 @@ window.onload = function () {
   ul.appendChild(li);
   crieteOpt();
   ranger();
+  criarInput();
 };
+// espaçamento das linhas
+function criarInput() {
+  const li = document.createElement("li");
+  const p = document.createElement("label");
+  const range = document.createElement("input");
+  range.setAttribute("id", "size");
+  p.setAttribute("for", "size");
+  p.innerText = "Espaçamento";
+  range.type = "range";
+  range.min = 1;
+  range.max = 3;
+  range.step = 0.1;
+  range.value = 1.5;
+  range.addEventListener("input", space);
+  li.appendChild(p);
+  li.appendChild(range);
+  ul.appendChild(li);
+}
+function space(event) {
+  document.querySelector(".cont-artigos").style.lineHeight = event.target.value;
+}
+
 // color fonts
 function crieteOpt() {
   const p = document.createElement("label");
