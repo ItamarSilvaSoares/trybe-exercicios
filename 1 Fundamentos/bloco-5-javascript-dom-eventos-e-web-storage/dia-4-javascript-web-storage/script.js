@@ -14,8 +14,32 @@ window.onload = function () {
     li.appendChild(div);
   }
   ul.appendChild(li);
+  crieteOpt();
   ranger();
 };
+// color fonts
+function crieteOpt() {
+  const p = document.createElement("label");
+  const cores = ["#D0D0D0", "black", "#D8774C"];
+  ul.appendChild(p);
+  p.innerText = "Colors Font";
+  for (index = 0; index < cores.length; index += 1) {
+    const li = document.createElement("li");
+    li.innerText = "Abc";
+    li.style.display = "inline-block";
+    li.style.color = cores[index];
+    li.style.padding = "10px";
+    li.style.background = "gray";
+    li.style.fontWeight = "bold";
+    li.addEventListener("click", colorFont);
+    ul.appendChild(li);
+  }
+}
+// muda cor fontes
+function colorFont(event) {
+  document.querySelector(".cont-artigos").style.color =
+    event.target.style.color;
+}
 
 // seletor do tamanho da fonte
 function ranger() {
@@ -40,7 +64,6 @@ function ranger() {
 function fontSize(event) {
   let num = event.target.value.toString() + "em";
   document.querySelector(".cont-artigos").style.fontSize = num;
-  console.log(num);
 }
 
 // mudar cor de fundo
