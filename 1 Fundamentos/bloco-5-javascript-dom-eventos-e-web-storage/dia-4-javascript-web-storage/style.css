@@ -41,7 +41,7 @@ h1{
 
 .artigo{
     text-align: justify;
-    width: 49%;
+    width: 48.8%;
 }
 
 .left{
@@ -64,6 +64,8 @@ h1{
 
 p{
     text-indent: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 footer{
@@ -76,8 +78,8 @@ footer{
     top: 39px;
     float: right;
     border: 1px solid lightgrey;
-    right: 2.5%;
-    width: 25%;
+    right: 2.6%;
+    width: auto;
     z-index: 999;
     visibility: hidden;
     background-color: #a3a0a0;
@@ -90,4 +92,29 @@ footer{
     border: 1px solid black;
     display: inline-block;
     margin-right: 2px;
+}
+
+ li {
+     list-style: none;
+    margin: auto;
+    text-align: center;
+}
+
+ul{
+    position: relative;
+    margin: 10px;
+    padding: 0px;
+    
+}
+
+div{
+    margin-left: 5px;
+}
+
+label{
+    margin-top: 10px;
+    line-height: 150%;
+    display: block;
+    text-align: center;
+    font-size: 1.15em;
 }
