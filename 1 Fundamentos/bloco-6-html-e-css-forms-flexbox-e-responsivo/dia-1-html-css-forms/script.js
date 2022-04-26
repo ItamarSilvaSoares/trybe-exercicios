@@ -1,9 +1,6 @@
 const bEnviar = document.querySelector("#enviar-button");
 const bLimpar = document.querySelector("#limpar");
-bEnviar.addEventListener("click", voide);
-function voide(e) {
-  e.preventDefault();
-}
+
 
 bLimpar.addEventListener("click", () => {
   const inputs = document.querySelectorAll("input");

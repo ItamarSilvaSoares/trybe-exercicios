@@ -17,6 +17,7 @@
         <legend>Indentifique-se</legend>
         <label for="text-name">Nome:</label>
         <input
+          required
           id="text-name"
           type="text"
           placeholder="Nome Completo"
@@ -26,6 +27,7 @@
 
         <label for="text-email">Email:</label>
         <input
+          required
           type="email"
           name="email"
           id="text-email"
@@ -38,7 +40,7 @@
       <fieldset>
         <legend>Destino Preferido</legend>
         <label for="city">
-          <input type="radio" name="destinos" id="city" />Cidade</label
+          <input required type="radio" name="destinos" id="city" />Cidade</label
         >
         <label for="field">
           <input type="radio" name="destinos" id="field" />Campo</label
@@ -59,6 +61,8 @@
           </p>
         </label>
         <textarea
+          minlength="50"
+          required
           name="motivo"
           id="text-motiv"
           cols="50"
@@ -70,7 +74,7 @@
       <fieldset>
         <legend>Qual a melhor data para realizar sua viagem?</legend>
         <label for="data-text">Data</label>
-        <input type="date" name="dia" id="data-text" />
+        <input required type="date" name="dia" id="data-text" />
       </fieldset>
       <fieldset>
         <label class="line-box top-border" for="opt"
@@ -78,9 +82,13 @@
           outras incríveis oportunidades oferecidas pela Trybe?
         </label>
         <label class="line-box" for="termos-check"
-          ><input type="checkbox" name="termos" id="termos-check" />Concordo que
-          imagens das minhas férias poderão ser usadas na divulgação de
-          concursos futuros.
+          ><input
+            required
+            type="checkbox"
+            name="termos"
+            id="termos-check"
+          />Concordo que imagens das minhas férias poderão ser usadas na
+          divulgação de concursos futuros.
         </label>
         <input class="button" id="enviar-button" type="submit" value="ativar" />
         <input class="button" id="limpar" type="button" value="limpar" />
