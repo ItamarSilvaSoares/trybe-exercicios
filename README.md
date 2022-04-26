@@ -23,27 +23,27 @@ O programa conta com mais de 1.500 horas de aulas presenciais e online e aborda 
 ##### Bloco 3: Introdução - HTML & CSS
 
 - [x] 3-1: _HTML & CSS - Estruturas de página_
-- [ ] 3-2: _HTML & CSS - Primeiros passos em CSS_
-- [ ] 3-3: _HTML & CSS - Seletores e posicionamento_
-- [ ] 3-4: _HTML Semântico_
-- [ ] 3-5: _[Projeto - HTML & CSS](https://gomesanac.github.io/projetos/html-css/index.html)_
+- [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
+- [x] 3-3: _HTML & CSS - Seletores e posicionamento_
+- [x] 3-4: _HTML Semântico_
+- [x] 3-5: _[Projeto - HTML & CSS](https://gomesanac.github.io/projetos/html-css/index.html)_
 
 ##### Bloco 4: Introdução - JavaScript
 
-- [ ] 4-1: _JavaScript - Primeiros passos_
-- [ ] 4-2: _JavaScript - Array e loop For_
-- [ ] 4-3: _JavaScript - Objetos e funções_
-- [ ] 4-4: _JavaScript - DOM e seletores_
-- [ ] 4-5: _JavaScript - Trabalhando com elementos_
-- [ ] 4-6: _JavaScript - Eventos_
-- [ ] 4-7: _JavaScript - Web Storage_
+- [x] 4-1: _JavaScript - Primeiros passos_
+- [x] 4-2: _JavaScript - Array e loop For_
+- [x] 4-3: _JavaScript - Objetos e funções_
+- [x] 4-4: _JavaScript - DOM e seletores_
+- [x] 4-5: _JavaScript - Trabalhando com elementos_
+- [x] 4-6: _JavaScript - Eventos_
+- [x] 4-7: _JavaScript - Web Storage_
 
 ##### Bloco 5: Introdução - JavaScript - Projetos
 
 - [ ] 5-1: _[Projeto - Meme Generator](https://gomesanac.github.io/projects/meme-generator/index.html)_
-- [ ] 5-2: _[Projeto - Arte com Pixels](https://gomesanac.github.io/projects/pixels-art/index.html)_
-- [ ] 5-3: _[Projeto - Lista de tarefas](https://gomesanac.github.io/projects/todo-list/index.html)_
-- [ ] 5-4: _[Projeto - Adivinhe a Cor](https://gomesanac.github.io/projects/color-guess/index.html)_
+- [x] 5-2: _[Projeto - Arte com Pixels](https://gomesanac.github.io/projects/pixels-art/index.html)_
+- [x] 5-3: _[Projeto - Lista de tarefas](https://gomesanac.github.io/projects/todo-list/index.html)_
+- [x] 5-4: _[Projeto - Adivinhe a Cor](https://gomesanac.github.io/projects/color-guess/index.html)_
 - [ ] 5-5: _[Projeto - Carta Misteriosa](https://gomesanac.github.io/projects/mistery-letter/index.html)_
 
 ## Desenvolvimento Front-end :hourglass_flowing_sand:
