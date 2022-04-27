@@ -1,14 +1,32 @@
 const bEnviar = document.querySelector("#enviar-button");
 const bLimpar = document.querySelector("#limpar");
 
+function enableSubmit() {
+  const agreement = document.querySelector('#termos-check');
+  bEnviar.disabled = !agreement.checked;
+}
 
-bLimpar.addEventListener("click", () => {
-  const inputs = document.querySelectorAll("input");
-  document.querySelector("textarea").value = "";
-  for (let input of inputs) {
-    if (input.type !== "button" && input.type !== "submit") {
-      input.value = "";
-      input.checked = false;
+function clearFields() {
+  const formElements = document.querySelectorAll('input');
+  const textArea = document.querySelector('textarea');
+  for (let index = 0; index < formElements.length; index += 1) {
+    const userInput = formElements[index];
+    if (userInput.type !== 'submit' && userInput.type !== 'button'){
+      userInput.value = '';
+
     }
+    userInput.checked = false;
   }
-});
+  textArea.value = '';
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+}
+
+window.onload = function() {
+  bLimpar.addEventListener('click', clearFields);
+  bEnviar.addEventListener('click', handleSubmit);
+  const agreement = document.querySelector('#termos-check');
+  agreement.addEventListener('change', enableSubmit);
+};
