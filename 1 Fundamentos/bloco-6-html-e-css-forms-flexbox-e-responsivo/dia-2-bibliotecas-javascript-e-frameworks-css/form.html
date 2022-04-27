@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulário para concorrer a uma viagem</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
     <link rel="stylesheet" href="./bulma/css/bulma.min.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -83,7 +88,7 @@
             Qual a melhor data para realizar sua viagem?
           </legend>
           <label class="label" for="data-text">Data</label>
-          <input required type="date" name="dia" id="data-text" />
+          <input required type="text" name="dia" id="datepicker" />
         </fieldset>
         <fieldset class="control">
           <label class="line-box top-border checkbox" for="opt"
@@ -117,5 +122,9 @@
       </form>
     </main>
   </body>
+  <script src="moment-min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="pikaday.js"></script>
+  <script src="data.js"></script>
   <script src="/script.js"></script>
 </html>
