@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário para concorrer a uma viagem</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css"
+    />
+    <link rel="stylesheet" href="./bulma/css/bulma.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1 class="title is-1">Formulário para a viagem</h1>
+      </header>
+      <form action="#" method="get" id="form">
+        <fieldset class="control">
+          <legend class="legend">Indentifique-se</legend>
+          <label class="label" for="text-name">Nome:</label>
+          <input
+            class="input is-primary"
+            id="text-name"
+            type="text"
+            placeholder="Nome Completo"
+          />
+          <label class="label" for="text-email">Email:</label>
+          <input
+            class="input is-primary"
+            type="email"
+            name="email"
+            id="text-email"
+            placeholder="Digite seu email"
+          />
+        </fieldset>
+        <fieldset class="control">
+          <legend class="legend">Destino Preferido</legend>
+          <label class="radio" for="city">
+            <input
+              required
+              type="radio"
+              name="destinos"
+              id="city"
+            />Cidade</label
+          >
+          <label class="radio" for="field">
+            <input type="radio" name="destinos" id="field" />Campo</label
+          >
+          <label class="radio" for="beach">
+            <input type="radio" name="destinos" id="beach" /> Praia</label
+          >
+          <label class="radio" for="mountain">
+            <input type="radio" name="destinos" id="mountain" />Montanhas</label
+          >
+        </fieldset>
+        <fieldset class="control">
+          <label for="text-motiv">
+            <legend class="legend">
+              Por que você deveria ser a pessoa desenvolvedora a ganhar o
+              concurso TrybeTrip?
+            </legend>
+          </label>
+          <textarea
+            class="textarea is-small"
+            minlength="50"
+            required
+            name="motivo"
+            id="text-motiv"
+            placeholder="Escreva aqui o porque você deveria ganhar a viagem"
+            maxlength="500"
+          ></textarea>
+        </fieldset>
+        <fieldset class="control">
+          <legend class="legend">
+            Qual a melhor data para realizar sua viagem?
+          </legend>
+          <label class="label" for="datepicker">Data</label>
+          <input required type="text" name="dia" id="datepicker" />
+        </fieldset>
+        <fieldset class="control">
+          <label class="line-box top-border checkbox" for="opt"
+            ><input type="checkbox" name="oferta" id="opt" />Gostaria de receber
+            outras incríveis oportunidades oferecidas pela Trybe?
+          </label>
+          <label class="line-box checkbox" for="termos-check"
+            ><input
+              class="checkbox"
+              required
+              type="checkbox"
+              name="termos"
+              id="termos-check"
+            />Concordo que imagens das minhas férias poderão ser usadas na
+            divulgação de concursos futuros.
+          </label>
+          <input
+            class="button is-primary is-normal negrito"
+            disabled
+            id="enviar-button"
+            type="submit"
+            value="Enviar"
+          />
+          <input
+            class="button is-small is-danger is-light negrito"
+            id="limpar"
+            type="reset"
+            value="Limpar"
+          />
+        </fieldset>
+      </form>
+    </main>
+  </body>
+  <script src="moment.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate-plugin-date.production.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+  <script src="pikaday.js"></script>
+  <script src="data.js"></script>
+  <script src="/script.js"></script>
+  <script src="valida.js"></script>
+</html>

@@ -1,0 +1,53 @@
+* {
+    font-size: 1.02em;
+    padding: 0;
+    margin: 0;
+    background-color: #FAFAFA;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid grey;
+    box-shadow: 0 0 12px;
+}
+
+
+.legend, .p{
+    font-size: 1.08em;
+    font-style:italic;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+.line-box {
+    display: block;
+    margin: 5px;
+}
+textarea{
+    width: auto;
+    margin:10px;
+    resize: none;
+    padding:  7px;
+    border-radius: 8px;
+}
+.button{
+    padding: 7px;
+    cursor: pointer;
+}
+fieldset{
+    margin: 10px;
+    border-radius: 10px;
+}
+.negrito{
+    font-weight: bold;
+}
+
+fieldset input[type='text'], input[type='email']{
+    /* padding: 3px; */
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
