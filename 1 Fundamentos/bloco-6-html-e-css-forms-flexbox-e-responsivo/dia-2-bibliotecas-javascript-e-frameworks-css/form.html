@@ -19,29 +19,23 @@
       <header>
         <h1 class="title is-1">Formulário para a viagem</h1>
       </header>
-      <form action="#" method="get">
+      <form action="#" method="get" id="form">
         <fieldset class="control">
           <legend class="legend">Indentifique-se</legend>
           <label class="label" for="text-name">Nome:</label>
           <input
             class="input is-primary"
-            required
             id="text-name"
             type="text"
             placeholder="Nome Completo"
-            maxlength="40"
-            minlength="10"
           />
           <label class="label" for="text-email">Email:</label>
           <input
             class="input is-primary"
-            required
             type="email"
             name="email"
             id="text-email"
             placeholder="Digite seu email"
-            maxlength="50"
-            minlength="10"
           />
         </fieldset>
         <fieldset class="control">
@@ -77,8 +71,6 @@
             required
             name="motivo"
             id="text-motiv"
-            cols="50"
-            rows="10"
             placeholder="Escreva aqui o porque você deveria ganhar a viagem"
             maxlength="500"
           ></textarea>
@@ -87,7 +79,7 @@
           <legend class="legend">
             Qual a melhor data para realizar sua viagem?
           </legend>
-          <label class="label" for="data-text">Data</label>
+          <label class="label" for="datepicker">Data</label>
           <input required type="text" name="dia" id="datepicker" />
         </fieldset>
         <fieldset class="control">
@@ -115,16 +107,19 @@
           <input
             class="button is-small is-danger is-light negrito"
             id="limpar"
-            type="button"
+            type="reset"
             value="Limpar"
           />
         </fieldset>
       </form>
     </main>
   </body>
-  <script src="moment-min.js"></script>
+  <script src="moment.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate-plugin-date.production.min.js"></script>
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
   <script src="pikaday.js"></script>
   <script src="data.js"></script>
   <script src="/script.js"></script>
+  <script src="valida.js"></script>
 </html>

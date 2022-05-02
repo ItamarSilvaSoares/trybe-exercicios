@@ -35,6 +35,8 @@
     "time-grunt": "*"
   },
   "dependencies": {
+    "just-validate": "^3.5.2",
+    "just-validate-plugin-date": "^1.1.1",
     "moment": "^2.29.3"
   }
 }

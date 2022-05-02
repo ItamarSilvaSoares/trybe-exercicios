@@ -1,6 +1,6 @@
 const picker = new Pikaday({
     field: document.getElementById("datepicker"),
-    format: "D MMM YYYY",
+    format: "D/MM/yyyy",
     i18n: {
       previousMonth: "Mês Anterior",
       nextMonth: "Próximo mês",
@@ -30,6 +30,6 @@ const picker = new Pikaday({
       weekdaysShort: ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"],
     },
     onSelect: function () {
-      console.log(this.getMoment().format("Do MMMM YYYY"));
+      console.log(this.getMoment().format("D/MM/yyyy"));
     },
   });

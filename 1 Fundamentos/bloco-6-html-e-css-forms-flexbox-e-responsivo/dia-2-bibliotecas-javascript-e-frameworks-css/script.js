@@ -1,5 +1,4 @@
 
-
 const bEnviar = document.querySelector("#enviar-button");
 const bLimpar = document.querySelector("#limpar");
 
@@ -23,11 +22,11 @@ function clearFields() {
 }
 
 function handleSubmit(event) {
-  event.preventDefault();
+  // event.preventDefault();
 }
 
 window.onload = function() {
-  bLimpar.addEventListener('click', clearFields);
+  // bLimpar.addEventListener('click', clearFields);
   bEnviar.addEventListener('click', handleSubmit);
   const agreement = document.querySelector('#termos-check');
   agreement.addEventListener('change', enableSubmit);
