@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+ margin: 10px;
+ background-color: #161320;
+ color: #A7AFC2;
+}
+
+h1, h2 {
+    font-size: 2.5em;
+    background-color: #1C1829;
+}
+
+header, header nav ul{
+    display: flex;
+    /* background-color:aquamarine; */
+}
+
+header ul li {
+    padding: 5px;
+ }
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main-content p {
+    text-align: justify;
+    font-size: 30px;
+}
+
+.aside-one ul li, .aside-two ul li {
+    font-size: 30px;
+
+}
+
+
+@media screen and (max-width: 600px) {
+     header {
+         flex-direction: column;
+         align-content: stretch;
+         justify-content: center;
+         align-items: center;
+     }
+
+     header p {
+    margin: 0;
+    font-size: 35px;
+     }
+
+     header ul li {
+        font-size: 25px;
+     }
+
+     header ul {
+    margin: 10px 0;
+
+    }
+
+    .main-content p {
+    line-height: 1.5em;
+    }
+    
+    footer {
+    font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+
+header {
+    justify-content: space-around;
+        align-items: center;
+}
+
+header p {
+    text-align: center;
+    font-size: 2.5em;
+}
+
+header nav {
+    font-size: 1.9em;
+}
+
+.main-content {
+    margin:10px;
+}
+
+.main-content p {
+    margin: 5px auto;
+    text-indent: 1.5em;
+    font-size: 2em;
+}
+footer {
+    font-size: 1.9em;
+    }
+    aside {
+        margin-left: 5px ;
+    }
+
+    h1, h2 {
+        text-indent: 10px;
+        font-size: 50px;
+    }
+}
