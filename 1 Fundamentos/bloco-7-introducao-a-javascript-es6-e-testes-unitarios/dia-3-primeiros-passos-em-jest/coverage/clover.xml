@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1652206330739" clover="3.2.0">
+  <project timestamp="1652206330739" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2" elements="18" coveredelements="18" complexity="0" loc="10" ncloc="10" packages="1" files="2" classes="2"/>
+    <file name="myRemove.js" path="/home/itamar/MEGAsync/Documentos/Cursos/Trybe/trybe-exercicios/1 Fundamentos/bloco-7-introducao-a-javascript-es6-e-testes-unitarios/dia-3-primeiros-passos-em-jest/myRemove.js">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="2" count="3" type="stmt"/>
+      <line num="3" count="3" type="stmt"/>
+      <line num="4" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="10" type="stmt"/>
+      <line num="8" count="3" type="stmt"/>
+      <line num="11" count="1" type="stmt"/>
+    </file>
+    <file name="sum.js" path="/home/itamar/MEGAsync/Documentos/Cursos/Trybe/trybe-exercicios/1 Fundamentos/bloco-7-introducao-a-javascript-es6-e-testes-unitarios/dia-3-primeiros-passos-em-jest/sum.js">
+      <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="2" count="4" type="cond" truecount="4" falsecount="0"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="12" count="1" type="stmt"/>
+    </file>
+  </project>
+</coverage>
