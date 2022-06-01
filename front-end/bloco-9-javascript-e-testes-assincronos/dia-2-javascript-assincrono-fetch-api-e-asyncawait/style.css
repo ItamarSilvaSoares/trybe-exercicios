@@ -1,0 +1,13 @@
+* {
+    background-color: #121421;
+    color: #7DE2F8;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+}
