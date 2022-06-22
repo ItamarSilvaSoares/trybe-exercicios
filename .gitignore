@@ -24,4 +24,6 @@
 
 # Support for Project snippet scope
 
+node_modules
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
