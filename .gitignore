@@ -9,6 +9,8 @@
 !.vscode/extensions.json
 !.vscode/*.code-snippets
 .vscode
+*.env
+*.env.*
 
 # dependencies
 /node_modules
