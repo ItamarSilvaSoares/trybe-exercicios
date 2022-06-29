@@ -16,6 +16,16 @@ class App extends React.Component {
     this.fetchData();
   }
 
+  shouldComponentUpdate(_nextProps, { dogObject }) {
+    const { message } = dogObject;
+    return !message.includes('terrier');
+  }
+
+  componentDidUpdate(_prevProps, { dogObject: { message } }) {
+    localStorage.setItem('image', JSON.stringify(message));
+    console.log(message);
+  }
+
 fetchData = async () => {
   const url = 'https://dog.ceo/api/breeds/image/random';
   const result = await fetch(url);
