@@ -89,4 +89,5 @@ describe('testando a requisição ', () => {
         await expect(service.fetchDog()).resolves.toBe('request failed');
         expect(service.fetchDog).toHaveBeenCalledTimes(1);
     })
+
 })
